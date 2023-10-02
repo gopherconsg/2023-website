@@ -137,14 +137,22 @@ p {
   position: relative;
   max-width: 100%;
   margin-bottom: 3rem;
+  animation: 1s cubic-bezier(.36,1.39,.58,.92) 0.5s both popup;
 }
 
-.hero-stars {
+.hero-stars-offset {
+  display: flex;
+  justify-content: center;
+  transform: translate(-44%, 0);
   position: absolute;
   left: 50%;
   bottom: 5.75rem;
-  transform: translate(-44%, 0);
-  max-width: none
+}
+
+.hero-stars {
+  max-width: 200%;
+  animation: 1s cubic-bezier(.13,.71,.19,.99) 1s both boomz;
+  transform-origin: 50% 100%;
 }
 
 .hero-wave-back {
@@ -174,6 +182,36 @@ p {
   background: url("/img/hero-wave-front.png") repeat-x bottom center;
 }
 
+@keyframes popup {
+  from {
+    transform: translate(0, 100%);
+  }
+  
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes popup-desktop {
+  from {
+    transform: translate(-28%, 100%);
+  }
+  
+  to {
+    transform: translate(-28%, 0);
+  }
+}
+
+@keyframes boomz {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 46.25rem;
@@ -189,6 +227,10 @@ p {
     top: 4.375rem;
     transform: translate(-28%, 0);
     margin-bottom: 0;
+    animation-name: popup-desktop;
+  }
+  .hero-stars {
+    max-width: none;
   }
 }
 

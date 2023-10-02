@@ -22,7 +22,7 @@
           {{ range $.Site.Data.speakers.speakers }}
             <li>
               {{ $image := resources.Get (printf "images/speakers/%s" .image) }}
-              <img class="mb-4" width="280" src="{{ $image.Permalink }}">
+              <img class="mb-4" width="280" src="{{ $image.RelPermalink }}">
               <h3 class="text-lg">{{ .name }}</h3>
               <div>{{ .title }}</div>
               <div>{{ .company }}</div>

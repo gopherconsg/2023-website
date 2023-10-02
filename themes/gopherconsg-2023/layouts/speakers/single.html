@@ -5,7 +5,7 @@
         {{ $image := resources.Get (printf "images/speakers/%s" .image) }}
         <div class="flex mb-4 md:mb-8">
           <figure class="w-24 md:w-[320px] mr-4 md:mr-8">
-            <img src="{{ $image.Permalink }}">
+            <img src="{{ $image.RelPermalink }}">
           </figure>
           <div class="md:hidden">
             <h3 class="mb-4">{{ .name }}</h3>

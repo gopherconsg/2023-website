@@ -3,12 +3,12 @@
     <div class="flex flex-col gap-6 mb-16 sm:flex-row">
       {{ with .Resources.GetMatch "about-1.jpg" }}
         <figure class="text-center">
-          <img class="inline-block" src="{{ .Permalink }}">
+          <img class="inline-block" src="{{ .RelPermalink }}">
         </figure>
         {{ end }}
         {{ with .Resources.GetMatch "about-2.jpg" }}
         <figure class="text-center">
-          <img class="inline-block" class="basis-1/2" src="{{ .Permalink }}">
+          <img class="inline-block" class="basis-1/2" src="{{ .RelPermalink }}">
         </figure>
       {{ end }}
     </div>

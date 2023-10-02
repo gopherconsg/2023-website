@@ -18,7 +18,7 @@ body {
 h2 {
   font-size: 2.75rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1.1;
 }
 
 h3 {
@@ -114,7 +114,6 @@ p {
 /* Home */
 
 .hero {
-  height: 46.25rem;
   background-color: var(--brand-blue);
   font-family: 'Dangrek', 'Inter','Helvetica Neue',Arial,sans-serif;
   color: #fff;
@@ -123,8 +122,8 @@ p {
 }
 
 .hero-text {
-  max-width: 24.375rem;
-  margin-top: 7rem;
+  text-align: center;;
+  margin-top: 3rem;
 }
 
 .hero-text h1 {
@@ -135,11 +134,9 @@ p {
 }
 
 .hero-mascots {
-  position: absolute;
-  left: 50%;
-  top: 4.375rem;
-  transform: translate(-28%, 0);
-  max-width: none
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 3rem;
 }
 
 .hero-stars {
@@ -175,6 +172,24 @@ p {
   bottom: 0;
   left: 0;
   background: url("/img/hero-wave-front.png") repeat-x bottom center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 46.25rem;
+  }
+  .hero-text {
+    text-align: left;
+    max-width: 24.375rem;
+    margin-top: 7rem;
+  }
+  .hero-mascots {
+    position: absolute;
+    left: 50%;
+    top: 4.375rem;
+    transform: translate(-28%, 0);
+    margin-bottom: 0;
+  }
 }
 
 .speakers {

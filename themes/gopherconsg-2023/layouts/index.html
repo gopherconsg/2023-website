@@ -33,6 +33,20 @@
       </div>
     </div>
 
+    <section id="tickets">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            {{ with .Site.Data.index.tickets.headline }}
+            <h2 class="pt-[6rem] mb-[3rem] text-center">{{ . }}</h2>
+            {{ end }}
+            <tito-widget event="gopherconsg/2023"></tito-widget>
+            {{ with .Site.Data.index.tickets.policy }}
+            {{ . | markdownify }}
+            {{ end }}
+        </div>
+      </div>
+    </section>
+
     <div class="partners mb-8">
       <h2 class="pt-[10rem] mb-[3rem] md:pt-[14rem] md:mb-[7rem] text-center">Our Partners</h2>
       <div class="container">

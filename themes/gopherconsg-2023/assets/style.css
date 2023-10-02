@@ -1141,6 +1141,10 @@ p {
     margin-right: 2rem;
   }
 
+  .md\:mb-\[6rem\] {
+    margin-bottom: 6rem;
+  }
+
   .md\:block {
     display: block;
   }

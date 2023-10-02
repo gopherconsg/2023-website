@@ -25,3 +25,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src='https://js.tito.io/v2' async></script>
+{{ if $.Site.IsServer }}
+{{ "<!-- Tito is running in Development Mode! -->" | safeHTML }}
+<script>TitoDevelopmentMode = true</script>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ partial "default_head.html" . }}
+{{ partial "header.html" . }}
+
+<article class="page-bg mb-16">
+  <div class="container overflow-hidden">
+    <h2 class="mt-[3.75rem] mb-12 md:mb-[5rem]">{{ .Title }}</h2>
+    <div itemprop="articleBody">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </div>
+</article>
+
+
+{{ partial "footer.html" . }}
+{{ partial "default_foot.html" . }}

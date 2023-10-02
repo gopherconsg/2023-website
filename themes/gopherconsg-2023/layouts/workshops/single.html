@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <table class="text-left responsive-table">
+    <colgroup class="hidden md:table-column-group">
+      <col class="w-[32%]" />
+      <col class="w-[68%]" />
+    </colgroup>
+    <thead class="hidden md:table-header-group">
+      <tr class="text-2xl border-b border-b-gray-400">
+        <th class="pb-8">Schedule</th>
+        <th class="pb-8">Topic</th>
+      </tr>
+    </thead>
+    <tbody class="align-top">
+      {{ range $.Site.Data.workshops.workshops }}
+        <tr class="border-b border-b-gray-400 last:border-b-0">
+          <td class="pt-6 md:pr-8 md:pb-8 whitespace-nowrap block md:table-cell">
+            <div class="md:hidden">
+              <div class="text-2xl font-semibold mb-1">{{ .title }}</div>
+              <div class="font-semibold mb-8">By <a class="link" href="{{ .speakerLink }}">{{ .speaker }}</a></div>
+            </div>
+            <div class="font-semibold text-lg mb-1">
+              {{ .date }}
+            </div>
+            <div class="font-semibold text-lg mb-4 md:mb-8">
+              {{ .time }}
+            </div>
+            <div class="mb-4 md:mb-8">
+              {{ .venue | markdownify}}
+            </div>
+            <div>{{ .additional }}</div>
+          </td>
+          <td class="pt-6 pb-8 block md:table-cell">
+            <div class="hidden md:block">
+              <div class="text-2xl font-semibold mb-1">{{ .title }}</div>
+              <div class="font-semibold mb-8">By <a class="link" href="{{ .speakerLink }}">{{ .speaker }}</a></div>
+            </div>
+            <h4 class="md:hidden mb-4 text-lg font-semibold">Topic</h4>
+            {{ .description | markdownify }}</td>
+          </td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+{{ end }}

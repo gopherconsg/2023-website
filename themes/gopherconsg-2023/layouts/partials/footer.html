@@ -1,0 +1,23 @@
+{{ with $.Site.Data.footer }}
+<footer class="footer">
+  <div class="container">
+    <h3 class="mb-4">GopherCon Singapore</h3>
+    <div class="mb-8 font-medium">
+      {{ with .copyright1 }}
+        <div>{{ . | markdownify }}</div>
+      {{ end }}
+      {{ with .copyright2 }}
+        <div>{{ . | safeHTML }}</div>
+      {{ end }}
+    </div>
+    <div class="font-light">
+      {{ with .copyright }}
+        <div>{{ . | safeHTML }}</div>
+      {{ end }}
+      {{ with .updatedDate }}
+        Last Updated {{ . }}</div>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+{{ end }}

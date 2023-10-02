@@ -1,0 +1,12 @@
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      const navbarToggle = document.getElementById("navbar-toggle");
+      const navbarContainer = document.getElementById("navbar-container");
+      navbarToggle.addEventListener('click', () => {
+        navbarToggle.setAttribute('aria-expanded', navbarToggle.getAttribute('aria-expanded') === 'false' )
+        navbarContainer.classList.toggle('hidden');
+      });
+    })
+  </script>
+  </body>
+</html>

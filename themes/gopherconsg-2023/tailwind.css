@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #14C8E0;
+  --brand-red: #EE4059;
+  --link-blue: #0F71BB;
+  --gradient: linear-gradient(180deg, var(--brand-blue) 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+body {
+  font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+  line-height: 2;
+  color: #1D2939;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+.link {
+  color: var(--link-blue);
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 2rem 0;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+}
+
+.navbar-toggle {
+  margin-left: auto;
+  color: var(--brand-blue);
+  padding: 0.65rem;
+  border-radius: 0.5rem;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(20, 200, 224, 0.2);
+  }
+}
+
+.menu-item {
+  font-weight: 600;
+}
+.menu-item a {
+  display: block;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0;
+  line-height: 2;
+  text-decoration: none;
+  text-align: center;
+  @media (min-width: 768px) {
+    padding: 1.4375rem 0;
+    text-align: left;
+  }
+}
+.menu-item a:hover {
+  color: var(--brand-blue);
+}
+.menu-item.active a {
+  color: var(--brand-blue);
+  @media (min-width: 768px) {
+    border-bottom-color: var(--brand-blue);
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--brand-red);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  line-height: 2;
+  border-radius: 0.3125rem;
+  font-weight: 300;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* Page */
+.page-bg {
+  background: var(--gradient) no-repeat top center / 100% 20rem;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+/* Home */
+
+.hero {
+  height: 46.25rem;
+  background-color: var(--brand-blue);
+  font-family: 'Dangrek', 'Inter','Helvetica Neue',Arial,sans-serif;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 24.375rem;
+  margin-top: 7rem;
+}
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.hero-mascots {
+  position: absolute;
+  left: 50%;
+  top: 4.375rem;
+  transform: translate(-28%, 0);
+  max-width: none
+}
+
+.hero-stars {
+  position: absolute;
+  left: 50%;
+  bottom: 5.75rem;
+  transform: translate(-44%, 0);
+  max-width: none
+}
+
+.hero-wave-back {
+  height: 333px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("/img/hero-wave-back.png") repeat-x bottom center;
+}
+
+.hero-wave-mid {
+  height: 258px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("/img/hero-wave-mid.png") repeat-x bottom center;
+}
+
+.hero-wave-front {
+  height: 207px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("/img/hero-wave-front.png") repeat-x bottom center;
+}
+
+.speakers {
+  background:
+    url("/img/speakers-bg.png") no-repeat top center,
+    var(--gradient) no-repeat top center / 100% 25rem;
+}
+
+.partners {
+  background:
+    url("/img/partners-wave.png") repeat-x center top,
+    url("/img/partners-bg.png") no-repeat center 100px,
+    var(--gradient) no-repeat center 70px / 100% 22rem;
+}

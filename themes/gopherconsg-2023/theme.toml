@@ -1,0 +1,7 @@
+name = "GopherCon Singapore 2023"
+homepage = "//github.com/gopherconsg"
+min_version = 0.14
+
+[author]
+  name = "GopherCon Singapore"
+  homepage = "//github.com/gopherconsg"

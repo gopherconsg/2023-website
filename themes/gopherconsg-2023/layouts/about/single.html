@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{ .Content }}
+    <div class="flex flex-col gap-6 mb-16 sm:flex-row">
+      {{ with .Resources.GetMatch "about-1.jpg" }}
+        <figure class="text-center">
+          <img class="inline-block" src="{{ .Permalink }}">
+        </figure>
+        {{ end }}
+        {{ with .Resources.GetMatch "about-2.jpg" }}
+        <figure class="text-center">
+          <img class="inline-block" class="basis-1/2" src="{{ .Permalink }}">
+        </figure>
+      {{ end }}
+    </div>
+    <div itemprop="articleBody">
+      {{ with .Resources.GetMatch "code-of-conduct.md" }}
+        <h2 class="mb-16">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </div>
+{{ end }}

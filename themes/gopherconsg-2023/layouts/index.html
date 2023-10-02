@@ -1,0 +1,79 @@
+{{ partial "default_head.html" . }}
+{{ partial "header.html" . }}
+
+    <div class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>GopherCon Singapore</h1>
+          <h2>01 - 30 October 2023</h2>
+        </div>
+        <div class="hero-wave-back"></div>
+        <div class="hero-wave-mid"></div>
+        <img class="hero-mascots" src="/img/hero-mascots.png" />
+        <div class="hero-wave-front"></div>
+        <img class="hero-stars" src="/img/hero-stars.png" />
+      </div>
+    </div>
+
+    <div class="speakers mb-16">
+      <h2 class="text-center pt-[10rem] mb-[6rem]">Our Speakers</h2>
+      <div class="container text-center">
+        <ul class="flex gap-6 justify-center mb-16">
+          {{ range $.Site.Data.speakers.speakers }}
+            <li>
+              {{ $image := resources.Get (printf "images/speakers/%s" .image) }}
+              <img class="mb-4" width="280" src="{{ $image.Permalink }}">
+              <h3 class="text-lg">{{ .name }}</h3>
+              <div>{{ .title }}</div>
+              <div>{{ .company }}</div>
+            </li>
+          {{ end }}
+        </ul>
+        <a href="/speakers" class="cta-button">See All Speakers Details</a>
+      </div>
+    </div>
+
+    <div class="partners mb-8">
+      <h2 class="pt-[14rem] mb-[7rem] text-center">Our Partners</h2>
+      <div class="container">
+        <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Platinum</strong>
+          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
+            {{ with $.Site.Data.index.sponsors.platinum}}
+              {{ range . }}
+                {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+          
+        <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Gold</strong>
+          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
+            {{ with $.Site.Data.index.sponsors.gold}}
+              {{ range . }}
+                {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="md:flex items-center py-14 text-center">
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Silver</strong>
+          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
+            {{ with $.Site.Data.index.sponsors.silver}}
+              {{ range . }}
+                {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+{{ partial "default_foot.html" . }}

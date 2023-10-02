@@ -1,0 +1,39 @@
+[[schedule]]
+id = "opening-keynote-clear-is-better-than-clever"
+title = "Opening keynote: Clear is better than clever"
+description = "Well socialised Gophers often cite readability as one of Go’s core tenets, I disagree. In this talk I’ll discuss the differences between readability and clarity, show how to write clear Go code, and argue that Go programmers should strive for clarity, not just readability, in their programs."
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+time = "10:20AM - 10:45AM"
+
+[[schedule]]
+id = "controlling-distributed-energy-resources-with-edge-computing-and-go"
+title = "Controlling Distributed Energy Resources with Edge Computing and Go"
+description = "With advancing technologies, energy distribution model has changed from being centralised to being distributed. We created a platform for distributing and running IoT apps, written in Go, on edge devices to monitor and control distributed energy resources such as photovoltaic and battery systems."
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+time = "10:20AM - 10:45AM"
+
+[[schedule]]
+id = "data-journey-with-golang,-graphql-and-microservices"
+title = "Data Journey with Golang, GraphQL and Microservices"
+description = "A unique experience from one of the big online travel agents in SEA, Traveloka, in migrating the internal data platform from a monolith Java app into microservices app in Golang & GraphQL. I will also discuss how we use Kubernetes & Istio to efficiently deploy, monitor and scale this system."
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+time = "10:20AM - 10:45AM"
+
+[[schedule]]
+id = "going-to-sydney"
+title = "GOing to Sydney"
+description = "In this talk I will: help to raise awareness of what employers typically look for when hiring for Go developers; pin point the red flags; talk about Sydney’s Go Community."
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+time = "10:20AM - 10:45AM"
+
+[[schedule]]
+id = "engineering-luck:-essential-and-accidental-complexity-at-gojek"
+title = "Engineering Luck: Essential and Accidental Complexity at GOJEK"
+description = "The talk covers what is to me the most nuanced and difficult to apply concept in software engineering — distinguishing between essential and accidental complexity, and learning to mitigate the latter, while solving for the former."
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+time = "10:20AM - 10:45AM"

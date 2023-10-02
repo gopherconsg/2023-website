@@ -1,0 +1,19 @@
+[[workshops]]
+id = "ultimate-go"
+title = "Ultimate Go"
+speaker = "Elon Musk"
+speakerLink = "/speakers#elon-musk"
+description = """
+This class has been designed over the past 4 years and goes beyond just being a language class. There will be very little teaching of syntax and a big focus on learning how to read and understand the code you are writing. With a big understanding of “if performance matters” then these things matter. We will talk about semantics, guidelines, mechanical sympathy and data oriented design. We are going to talk about writing concurrent code and how to effectively use channels. Then I will dig into benchmarking and profile tooling. We will talk a lot about composition and design.
+
+Everyone is going to be mentally exhausted at the end of the days. We will be challenging every student to think about what they are doing and why. In the 4 years we have taught this material, we never had someone not appreciate the class and feel like they are a better developer for it. If you want to be a better Go developer, code reviewer, designer and architect, this is the class you want to take.
+"""
+date = "01-30 April 2023"
+time = "9:30am to 5:30pm"
+venue = """
+Developer Space @ Google Singapore
+Level 3, 80 Pasir Panjang Road,
+Mapletree Business City II,
+Singapore 117383
+"""
+additional = "Lunch and tea breaks will be provided."

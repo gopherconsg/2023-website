@@ -1,0 +1,23 @@
+[[speakers]]
+id = "john-doe"
+name = "John Doe"
+title = "Lead Engineer"
+company = "Gophercon"
+image = "speaker-1.jpg"
+description = """
+John Doe is a British computer scientist with specialist knowledge of computer security, distributed systems and software design. His software engineering experience has varied from being the lead developer of the then largest digital agency in the UK (by headcount) to developing software for embedded systems used in mission critical road safety applications.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+"""
+topicTitle = "Controlling Distributed Energy Resources with Edge Computing and Go"
+topicLink = "/schedule#controlling-distributed-energy-resources-with-edge-computing-and-go"
+
+[[speakers]]
+id = "elon-musk"
+name = "Elon Musk"
+title = "CEO"
+company = "Tesla, SpaceX"
+image = "elon.jpeg"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+topicTitle = "Topic title here"
+topicLink = "/schedule#topic-id"

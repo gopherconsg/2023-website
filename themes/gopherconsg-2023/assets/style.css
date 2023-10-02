@@ -1145,6 +1145,10 @@ p {
     margin-bottom: 6rem;
   }
 
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:block {
     display: block;
   }

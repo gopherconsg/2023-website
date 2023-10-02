@@ -12,10 +12,4 @@
         </figure>
       {{ end }}
     </div>
-    <div itemprop="articleBody">
-      {{ with .Resources.GetMatch "code-of-conduct.md" }}
-        <h2 class="mb-16">{{ .Title }}</h2>
-        {{ .Content }}
-      {{ end }}
-    </div>
 {{ end }}

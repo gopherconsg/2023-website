@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <section id="tickets">
+    <section id="tickets" class="mb-16">
       <div class="container">
         <div class="col-lg-8 col-lg-offset-2 text-center">
             {{ with .Site.Data.index.tickets.headline }}
@@ -46,6 +46,8 @@
         </div>
       </div>
     </section>
+
+    {{ partial "code-of-conduct.html" }}
 
     <div class="partners mb-8">
       <h2 class="pt-[10rem] mb-[3rem] md:pt-[14rem] md:mb-[7rem] text-center">Our Partners</h2>

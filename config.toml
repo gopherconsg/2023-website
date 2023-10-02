@@ -1,0 +1,19 @@
+baseurl = "https://2023.gophercon.sg/"
+languageCode = "en-SG"
+title = "GopherCon Singapore 2023"
+theme = "gopherconsg-2023"
+
+[params]
+  name = "GopherCon Singapore"
+  description = "GopherCon Singapore is a Go programming language (Golang) conference in Southeast Asia."
+  ogimage = "gopherconsg2023-og.png"
+  logo = "gopherconsg2023-long.png" 
+
+[params.ticket]
+  buttonText = "Get Your Ticket Now"
+  link = "#tickets"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true

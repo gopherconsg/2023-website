@@ -26,6 +26,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+{{ if eq $.Site.IsServer false }}
+<script type="text/javascript">
+  ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+    p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+    };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+    n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//dq946n1u2xxy.cloudfront.net/t.js','sp'));
+   sp('newTracker', 'cf', 'd9ca3gcsg29e9.cloudfront.net', { // Initialise a tracker
+    appId: 'gcsg2023-website',
+    platform: 'web',
+    discoverRootDomain: true
+  });
+   sp('trackPageView')
+</script>
+{{ end }}
+
 <script src='https://js.tito.io/v2' async></script>
 {{ if $.Site.IsServer }}
 {{ "<!-- Tito is running in Development Mode! -->" | safeHTML }}

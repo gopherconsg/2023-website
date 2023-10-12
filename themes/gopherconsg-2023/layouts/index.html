@@ -5,7 +5,7 @@
       <div class="container">
         <div class="hero-text">
           <h1>GopherCon Singapore</h1>
-          <h2>01 - 30 October 2023</h2>
+          <h2>2 - 3 November 2023</h2>
         </div>
         <div class="hero-wave-back"></div>
         <div class="hero-wave-mid"></div>
@@ -16,19 +16,20 @@
     </div>
 
     <div class="speakers mb-16">
-      <h2 class="pt-[6rem] mb-[6rem] text-center md:pt-[10rem]">Our Speakers</h2>
+      <h2 class="pt-[2rem] mb-[3rem] text-center md:pt-[10rem] md:mb-[6rem]">Our Speakers</h2>
       <div class="container text-center">
-        <ul class="flex gap-6 justify-center mb-16">
+        <ul class="flex flex-col md:flex-row gap-6 justify-center mb-12">
           {{ range $.Site.Data.speakers.speakers }}
-            <li>
+            <li class="mb-8 md:max-w-[280px]">
               {{ $image := resources.Get (printf "images/speakers/%s" .image) }}
-              <img class="mb-4" width="280" src="{{ $image.RelPermalink }}">
-              <h3 class="text-lg">{{ .name }}</h3>
-              <div>{{ .title }}</div>
+              <img class="mx-auto mb-4" width="280" src="{{ $image.RelPermalink }}">
+              <h3 class="font-medium text-lg mb-2">{{ .name }}</h3>
+              <div class="leading-5 mb-2">{{ .title | markdownify }}</div>
               <div>{{ .company }}</div>
             </li>
           {{ end }}
         </ul>
+        <div class="text-lg">And more to be announced!</div>
       </div>
     </div>
 
@@ -36,7 +37,7 @@
       <div class="container">
         <div class="col-lg-8 col-lg-offset-2 text-center">
             {{ with .Site.Data.index.tickets.headline }}
-            <h2 class="pt-[6rem] mb-[3rem] text-center">{{ . }}</h2>
+            <h2 class="pt-[4rem] mb-[3rem] md:pt-[6rem] text-center">{{ . }}</h2>
             {{ end }}
             <tito-widget event="gopherconsg/2023"></tito-widget>
             {{ with .Site.Data.index.tickets.policy }}
@@ -49,27 +50,16 @@
     {{ partial "code-of-conduct.html" }}
 
     <div class="partners mb-8">
-      <h2 class="pt-[10rem] mb-[3rem] md:pt-[14rem] md:mb-[7rem] text-center">Our Partners</h2>
+      <h2 class="pt-[8rem] mb-[3rem] md:pt-[14rem] md:mb-[7rem] text-center">Our Partners</h2>
       <div class="container">
-        <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
-          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Platinum</strong>
-          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
-            {{ with $.Site.Data.index.sponsors.platinum}}
-              {{ range . }}
-                {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
-              {{ end }}
-            {{ end }}
-          </div>
-        </div>
           
         <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
           <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Gold</strong>
-          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
+          <div class="flex items-center flex-1 justify-center gap-2 md:gap-8 flex-wrap">
             {{ with $.Site.Data.index.sponsors.gold}}
               {{ range . }}
                 {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="170" />
               {{ end }}
             {{ end }}
           </div>
@@ -77,11 +67,11 @@
 
         <div class="md:flex items-center py-14 text-center">
           <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Silver</strong>
-          <div class="flex items-center flex-1 justify-center gap-4 flex-wrap">
+          <div class="flex items-center flex-1 justify-center gap-2 md:gap-8 flex-wrap">
             {{ with $.Site.Data.index.sponsors.silver}}
               {{ range . }}
                 {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="170" />
               {{ end }}
             {{ end }}
           </div>

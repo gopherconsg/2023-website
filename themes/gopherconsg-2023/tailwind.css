@@ -16,9 +16,13 @@ body {
 }
 
 h2 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.1;
+  
+  @media (min-width: 768px) {
+    font-size: 2.75rem;
+  }
 }
 
 h3 {
@@ -219,7 +223,8 @@ p {
   .hero-text {
     text-align: left;
     max-width: 24.375rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
+    margin-left: 6rem;
   }
   .hero-mascots {
     position: absolute;

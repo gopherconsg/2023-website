@@ -31,45 +31,33 @@ Our conference is dedicated to providing a harassment-free conference experience
 
 If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible by emailing [hello@gophercon.sg](mailto:hello@gophercon.sg), or by speaking to a member of the conference staff. Conference staff will be wearing badges with the label "Organiser"."""
 
-
-[[sponsors.platinum]]
-name = "Gojek"
-logo = "gojek-logo.png"
-
-[[sponsors.platinum]]
-name = "Traveloka"
-logo = "traveloka-logo.png"
+[[sponsors.gold]]
+name = "Abnormal"
+logo = "abnormal.png"
 
 [[sponsors.gold]]
-name = "DBS"
-logo = "dbs-logo.png"
+name = "GovTech"
+logo = "stack.png"
+
+[[sponsors.gold]]
+name = "Grab"
+logo = "grab.png"
+
+[[sponsors.gold]]
+name = "okta"
+logo = "okta.png"
 
 [[sponsors.gold]]
 name = "SPdigital"
-logo = "spdigital-logo.png"
+logo = "spdigital.png"
 
-[[sponsors.gold]]
-name = "WeWork"
-logo = "wework-logo.png"
 
 [[sponsors.silver]]
-name = "Brankas"
-logo = "brankas-logo.png"
+name = "Grafana"
+logo = "grafana.png"
 
 [[sponsors.silver]]
-name = "Circles.Life"
-logo = "circleslife-logo.png"
-
-[[sponsors.silver]]
-name = "Google"
-logo = "google-logo.png"
-
-[[sponsors.silver]]
-name = "Stack Overflow Enterprise"
-logo = "stackoverflow-enterprise-logo.png"
-
-[[sponsors.silver]]
-name = "ThoughtWorks"
-logo = "thoughtworks-logo.png"
+name = "NCS"
+logo = "ncs.png"
 
 

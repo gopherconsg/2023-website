@@ -629,6 +629,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -643,10 +647,6 @@ video {
 
 .mb-\[3rem\] {
   margin-bottom: 3rem;
-}
-
-.mb-\[6rem\] {
-  margin-bottom: 6rem;
 }
 
 .mr-4 {
@@ -737,8 +737,8 @@ video {
   justify-content: center;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-6 {
@@ -801,12 +801,16 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-\[10rem\] {
-  padding-top: 10rem;
+.pt-\[2rem\] {
+  padding-top: 2rem;
 }
 
-.pt-\[6rem\] {
-  padding-top: 6rem;
+.pt-\[4rem\] {
+  padding-top: 4rem;
+}
+
+.pt-\[8rem\] {
+  padding-top: 8rem;
 }
 
 .text-left {
@@ -848,6 +852,10 @@ video {
   font-weight: 600;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 :root {
   --brand-blue: #14C8E0;
   --brand-red: #EE4059;
@@ -862,9 +870,12 @@ body {
 }
 
 h2 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.1;
+  @media (min-width: 768px) {
+    font-size: 2.75rem;
+  }
 }
 
 h3 {
@@ -1072,7 +1083,8 @@ p {
   .hero-text {
     text-align: left;
     max-width: 24.375rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
+    margin-left: 6rem;
   }
 
   .hero-mascots {
@@ -1129,6 +1141,10 @@ p {
     margin-bottom: 5rem;
   }
 
+  .md\:mb-\[6rem\] {
+    margin-bottom: 6rem;
+  }
+
   .md\:mb-\[7rem\] {
     margin-bottom: 7rem;
   }
@@ -1139,14 +1155,6 @@ p {
 
   .md\:mr-8 {
     margin-right: 2rem;
-  }
-
-  .md\:mb-\[6rem\] {
-    margin-bottom: 6rem;
-  }
-
-  .md\:mb-16 {
-    margin-bottom: 4rem;
   }
 
   .md\:block {
@@ -1185,8 +1193,20 @@ p {
     width: auto;
   }
 
+  .md\:max-w-\[280px\] {
+    max-width: 280px;
+  }
+
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:border-0 {
@@ -1215,6 +1235,10 @@ p {
 
   .md\:pt-\[14rem\] {
     padding-top: 14rem;
+  }
+
+  .md\:pt-\[6rem\] {
+    padding-top: 6rem;
   }
 
   .md\:text-base {

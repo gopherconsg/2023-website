@@ -32,10 +32,6 @@ Our conference is dedicated to providing a harassment-free conference experience
 If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible by emailing [hello@gophercon.sg](mailto:hello@gophercon.sg), or by speaking to a member of the conference staff. Conference staff will be wearing badges with the label "Organiser"."""
 
 [[sponsors.gold]]
-name = "Abnormal"
-logo = "abnormal.png"
-
-[[sponsors.gold]]
 name = "GovTech"
 logo = "stack.png"
 
@@ -50,6 +46,10 @@ logo = "okta.png"
 [[sponsors.gold]]
 name = "SPdigital"
 logo = "spdigital.png"
+
+[[sponsors.gold]]
+name = "Abnormal"
+logo = "abnormal.png"
 
 
 [[sponsors.silver]]

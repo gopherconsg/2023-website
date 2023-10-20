@@ -860,6 +860,12 @@ video {
   line-height: 1.25rem;
 }
 
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
   --brand-blue: #14C8E0;
   --brand-red: #EE4059;

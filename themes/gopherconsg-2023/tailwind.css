@@ -186,6 +186,17 @@ p {
   background: url("/img/hero-wave-front.png") repeat-x bottom center;
 }
 
+.venue {
+  padding: 2rem 0;
+  background-color: var(--brand-blue);
+  font-family: 'Dangrek', 'Inter','Helvetica Neue',Arial,sans-serif;
+  color: #fff;
+  
+  @media (min-width: 768px) {
+    padding: 4rem 0;
+  }
+}
+
 @keyframes popup {
   from {
     transform: translate(0, 100%);

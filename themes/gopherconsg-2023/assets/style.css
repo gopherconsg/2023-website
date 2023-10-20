@@ -840,6 +840,10 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -852,14 +856,17 @@ video {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .leading-5 {
   line-height: 1.25rem;
 }
 
+.leading-\[1\.5\] {
+  line-height: 1.5;
+}
+
+.leading-\[1\.25\] {
+  line-height: 1.25;
+}
 
 .antialiased {
   -webkit-font-smoothing: antialiased;
@@ -1055,6 +1062,16 @@ p {
   background: url("/img/hero-wave-front.png") repeat-x bottom center;
 }
 
+.venue {
+  padding: 2rem 0;
+  background-color: var(--brand-blue);
+  font-family: 'Dangrek', 'Inter','Helvetica Neue',Arial,sans-serif;
+  color: #fff;
+  @media (min-width: 768px) {
+    padding: 4rem 0;
+  }
+}
+
 @keyframes popup {
   from {
     transform: translate(0, 100%);
@@ -1223,6 +1240,19 @@ p {
     border-width: 0px;
   }
 
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
+  .md\:border-solid {
+    border-style: solid;
+  }
+
+  .md\:border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -1231,12 +1261,20 @@ p {
     padding-bottom: 2rem;
   }
 
+  .md\:pl-\[5rem\] {
+    padding-left: 5rem;
+  }
+
   .md\:pr-14 {
     padding-right: 3.5rem;
   }
 
   .md\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .md\:pr-\[5rem\] {
+    padding-right: 5rem;
   }
 
   .md\:pt-\[10rem\] {
@@ -1249,6 +1287,14 @@ p {
 
   .md\:pt-\[6rem\] {
     padding-top: 6rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
   }
 
   .md\:text-base {

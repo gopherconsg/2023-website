@@ -1,6 +1,8 @@
 +++
 title = 'About us'
 type = 'about'
+draft = true
+
 [menu]
   [menu.main]
     weight = 1

@@ -51,6 +51,9 @@ logo = "spdigital.png"
 name = "Abnormal"
 logo = "abnormal.png"
 
+[[sponsors.special]]
+name = "Ardan Labs"
+logo = "ardanlabs.png"
 
 [[sponsors.silver]]
 name = "Grafana"

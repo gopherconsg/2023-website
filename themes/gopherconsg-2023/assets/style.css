@@ -721,6 +721,10 @@ video {
   flex-basis: 50%;
 }
 
+.basis-full {
+  flex-basis: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -858,10 +862,6 @@ video {
 
 .leading-5 {
   line-height: 1.25rem;
-}
-
-.leading-\[1\.5\] {
-  line-height: 1.5;
 }
 
 .leading-\[1\.25\] {
@@ -1226,6 +1226,22 @@ p {
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:basis-\[100px\] {
+    flex-basis: 100px;
+  }
+
+  .md\:basis-8 {
+    flex-basis: 2rem;
+  }
+
+  .md\:basis-full {
+    flex-basis: 100%;
+  }
+
+  .md\:basis-1\/12 {
+    flex-basis: 8.333333%;
   }
 
   .md\:flex-row {

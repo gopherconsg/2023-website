@@ -75,7 +75,7 @@
       <div class="container">
           
         <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
-          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Gold</strong>
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0 md:basis-1/12 md:text-left">Gold</strong>
           <div class="flex items-center flex-1 justify-center gap-2 md:gap-8 flex-wrap">
             {{ with $.Site.Data.index.sponsors.gold}}
               {{ range . }}
@@ -86,8 +86,20 @@
           </div>
         </div>
 
+        <div class="md:flex items-center py-14 border-b border-b-gray-500 text-center">
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0 md:basis-1/12 md:text-left">Workshop</strong>
+          <div class="flex items-center flex-1 justify-center gap-2 md:gap-8 flex-wrap">
+            {{ with $.Site.Data.index.sponsors.special}}
+              {{ range . }}
+                {{ $image := resources.Get (printf "images/sponsors/%s" .logo) }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" width="170" />
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
         <div class="md:flex items-center py-14 text-center">
-          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0">Silver</strong>
+          <strong class="block text-xl md:text-base md:mr-8 mb-8 md:mb-0 md:basis-1/12 md:text-left">Silver</strong>
           <div class="flex items-center flex-1 justify-center gap-2 md:gap-8 flex-wrap">
             {{ with $.Site.Data.index.sponsors.silver}}
               {{ range . }}

@@ -1,15 +1,41 @@
 [[workshops]]
-id = "ultimate-go"
-title = "Ultimate Go"
-speaker = "Elon Musk"
-speakerLink = "/speakers#elon-musk"
-description = """
-This class has been designed over the past 4 years and goes beyond just being a language class. There will be very little teaching of syntax and a big focus on learning how to read and understand the code you are writing. With a big understanding of “if performance matters” then these things matter. We will talk about semantics, guidelines, mechanical sympathy and data oriented design. We are going to talk about writing concurrent code and how to effectively use channels. Then I will dig into benchmarking and profile tooling. We will talk a lot about composition and design.
+id = "ultimate-service"
+title = "Ultimate Service with Kubernetes"
+speaker = "William Kennedy"
+speakerLink = "/speakers#william-kennedy"
+description = """This class teaches how to build production-level services in Go with a focus on macro-level engineering decisions. From the beginning you will program along with the instructor, walking through the design philosophies and guidelines used to engineer the code. With each new feature, you will learn more about the transition from programming to engineering and the points of refactoring required to write production-level applications. Throughout the class, Go modules and Kubernetes will be a focus. Everyone will be making better engineering decisions after this class.
 
-Everyone is going to be mentally exhausted at the end of the days. We will be challenging every student to think about what they are doing and why. In the 4 years we have taught this material, we never had someone not appreciate the class and feel like they are a better developer for it. If you want to be a better Go developer, code reviewer, designer and architect, this is the class you want to take.
-"""
-date = "01-30 April 2023"
-time = "9:30am to 5:30pm"
+What a student is expected to learn:
+
+* Modules
+* Project Structure
+* Routing Basics
+* Web Framework
+* Middleware
+* Kubernetes
+* Business CRUD
+* Database Support
+* REST API
+
+<br />
+
+Prerequisites:
+
+* Basic understanding of the Go programming language is recommended. Take the Go tour here: https://tour.golang.org/welcome/
+* Basic understanding of and comfort in working on the command line. Learn the command line here: https://www.codecademy.com/learn/learn-the-command-line
+
+&nbsp;
+
+Recommended Preparation:
+
+* Please clone the main repo for the class. github.com/ardanlabs/service
+* Please read the instructions in the makefile for installing everything prior to coming to class.
+* Please email the instructor for help, bill@ardanlabs.com 
+
+Computers should be capable of modern software development, such as access to install and run binaries, install a code editor, etc."""
+
+date = "2 November 2023"
+time = "9:00am to 5:30pm"
 venue = """
 Developer Space @ Google Singapore
 Level 3, 80 Pasir Panjang Road,

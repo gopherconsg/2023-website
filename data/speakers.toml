@@ -1,36 +1,77 @@
 [[speakers]]
 id = "sau-sheong"
 name = "Chang Sau Sheong"
-title = """
-Deputy Chief Executive,
-Product and Engineering
-"""
 company = "GovTech Singapore"
 image = "sau-sheong-2.jpeg"
-description = """
-Desc
-"""
-topicTitle = "Topic Title"
-topicLink = "/schedule#topic-id"
+description = "Sau Sheong is the Deputy Chief Executive of Product & Engineering at GovTech Singapore. Previously, he worked with SP Group, running a business unit as the CEO, as well as IT, OT and digital transformation for Singapore's main utility company. In his 28 years of experience, he has led product engineering initiatives at PayPal, Yahoo, and HP, founded a software company and headed technology teams in various startups. He is active in Singapore’s tech community and has written five programming books, the last 2 books on Go."
+topicTitle = "Go and LLMs"
+topicLink = "/schedule#sausheong-chang"
 
 [[speakers]]
 id = "dave-cheney"
 name = "Dave Cheney"
-title = "Lead; Copilot proxy"
-company = "Github"
+company = "GitHub"
 image = "dave-cheney.jpg"
-description = """
-Desc
-"""
-topicTitle = "Topic Title"
-topicLink = "/schedule#topic-id"
+description = "David is an open source contributor and project member for the Go programming language. David is a well-respected voice within the tech community, speaking on a variety of topics such as software design, performance, and the Go programming language."
+topicTitle = "Three techniques for building high performance parsers"
+topicLink = "/schedule#dave-cheney"
 
 [[speakers]]
 id = "chewxy"
 name = "Chew Xuanyi"
-title = "Chief Data Scientist"
-company = "Gorgonia"
+company = "Nine"
 image = "chewxy.jpg"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-topicTitle = "Topic title here"
-topicLink = "/schedule#topic-id"
+description = "Xuanyi is the primary author of [Gorgonia](https://gorgonia.org), a family of deep learning libraries written in Go. By day he is the lead data scientist at Nine, building AI applications to help make better media decisions. By night, he is an evangelist for doing machine learning and building artificial intelligence systems in Go."
+topicTitle = "Man Bites Dog: A Journey of LLMs and What Comes Next (and Why Go is Poised To Be At The Centre of The Next Tech Revolution)"
+topicLink = "/schedule#chewxy"
+
+[[speakers]]
+id = "chris-shepherd"
+name = "Chris Shepherd"
+company = "Cloudflare"
+image = "chris-shepherd.jpg"
+description = "Chris Shepherd is a Senior Systems Engineer at Cloudflare, building large scale, highly-available and robust distributed systems. He has worked within software engineering for more than seven years, the majority of which have been dedicated to writing Go. He has worked for both big-name companies, such as IBM and Cloudflare, and fast paced, hyper-growth startups, spanning across many different industries, including finance, cybersecurity, and the public sector."
+topicTitle = "Go Concurrency Techniques for Self-Healing Applications"
+topicLink = "/schedule#chris-shepherd"
+
+[[speakers]]
+id = "kirill-che"
+name = "Kirill Che"
+image = "kirill-che.jpg"
+description = "Kirill is an experienced software engineer with a passion for crafting high-performance applications and solving complex challenges. With over 10 years of diverse experience in the field, his journey began with creating applications for Android before transitioning to Java and ultimately finding his niche in Go programming."
+topicTitle = "Go low latency patterns"
+topicLink = "/schedule#kirill-che"
+
+[[speakers]]
+id = "marian-montagnino"
+name = "Marian Montagnino"
+company = "Netflix"
+image = "marian-montagnino.jpg"
+description = "Marian is a polyglot developer at Netflix coding in Java, Javascript and Go. While continuing to develop in other languages, Golang remains her favorite. She's been coding in Go since 2014 within the media, beauty, and logistic industries and currently in cloud infrastructure at Netflix. Marian earned a dual BS degree in Computer Science and Mathematics from Rensselaer Polytechnic Institute (Troy, NY) and MS in Applied Mathematics from Stevens Institute of Technology (Hoboken, NJ). She loves hiking, painting and reading books on religion, spirituality and science."
+topicTitle = "Back to the Future: Modernizing CLIs Using Go"
+topicLink = "/schedule#marian-montagnino"
+
+[[speakers]]
+id = "matt-boyle"
+name = "Matt Boyle"
+company = "Cloudflare"
+image = "matt-boyle.jpg"
+description = "Matt Boyle is an experienced technical leader in the field of distributed systems, specializing in using Go. He has worked at huge companies such as Cloudflare and General Electric, as well as exciting high-growth startups such as Curve and Crowdcube. Matt has been writing Go for production since 2018 and often shares blog posts and fun trivia about Go over on Twitter (@MattJamesBoyle)."
+topicTitle = "Keeping myself alive with Go"
+topicLink = "/schedule#matt-boyle"
+
+[[speakers]]
+id = "wu-huijie"
+name = "Wu Huijie"
+company = "GovTech Singapore"
+image = "huijie-wu.jpg"
+description = "Huijie is a software engineer at GovTech. He brings over 16 years of experience in the realm of IT and throughout his career, he worked on an array of projects including frontend web applications to Flash games, mobile applications, and server applications. His journey has led him across a variety of industries, including advertising, gaming, and video streaming. He spends his free time assembling model kits, drawing or tinkering with the next coding project or challenge."
+topicTitle = "Data Integration: Building Systems for Swift Client Servicing in Go"
+topicLink = "/schedule#huijie-wu"
+
+[[speakers]]
+id = "william-kennedy"
+name = "William Kennedy"
+company = "Ardan Labs"
+image = "bill-kennedy.jpg"
+description = "William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems development company. He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity."

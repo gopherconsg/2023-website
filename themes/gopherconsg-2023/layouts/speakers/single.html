@@ -19,7 +19,7 @@
             <div class="mb-6">{{ with .title }}{{ . }}, {{ end }}{{ .company }}</div>
           </div>
           <div class="mb-10">{{ .description | markdownify }}</div>
-          <!-- <a class="link" href="{{ .topicLink }}">{{ .topicTitle }}</a> -->
+          <a class="link" href="{{ .topicLink }}">{{ .topicTitle }}</a>
         </div>
       </li> 
     {{ end }}

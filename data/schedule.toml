@@ -48,6 +48,13 @@ speaker = "Chew Xuanyi"
 speakerLink = "/speakers#chewxy"
 
 [[schedule]]
+id = "bjorn-andersson"
+title = "How to design a test suite you’ll love to maintain"
+description = "Have you worked on a test suite where you're cursing it more often than you're thanking it for helping you out? I sure have! I have written them myself, seen a good suite degrade into it over time, and even taken over messes. I will share the constraints I put on my test suites that help me maintain them and why they help. We'll look at how to discover when you're breaking these constraints and solutions to make living with the constraints simpler."
+speaker = "Björn Andersson"
+speakerLink = "/speakers#bjorn-andersson"
+
+[[schedule]]
 id = "matt-boyle"
 title = "Keeping myself alive with Go"
 description = "As a type 1 diabetic, keeping myself alive is a daily P1 incident with runbooks that are constantly out of date. Like all systems, having good monitoring is essential to ensure uptime (or as I call it, staying alive).  In this talk I will discuss how I have evolved my o11y using Go & other tools."

@@ -17,6 +17,15 @@ topicTitle = "Three techniques for building high performance parsers"
 topicLink = "/schedule#dave-cheney"
 
 [[speakers]]
+id = "bjorn-andersson"
+name = "Björn Andersson"
+company = "Foodpanda"
+image = "bjorn-andersson.jpg"
+description = "Björn is a Principal Engineer at foodpanda where he spends his time looking at how to make the production experience better while helping as many engineers as he can grow in their role. He explores this using continuous delivery, testing, observability, and incident management. In his 16 years he has worked in several startups and as a consultant and has experienced retail, banking, goverment ministries, space , and most recently fintech and food delivery at foodpanda."
+topicTitle = "How to design a test suite you’ll love to maintain"
+topicLink = "/schedule#bjorn-andersson"
+
+[[speakers]]
 id = "chewxy"
 name = "Chew Xuanyi"
 company = "Nine"

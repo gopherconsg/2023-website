@@ -1,9 +1,23 @@
 [[schedule]]
+id = "registration"
+title = "Registration"
+description = "Doors open at 8 AM. See you there!"
+speaker = "GopherCon Singapore Team"
+time = "8:00 AM"
+
+[[schedule]]
+id = "opening-remarks"
+title = "Opening Remarks"
+speaker = "Teck Chun Pang"
+time = "9:00 AM"
+
+[[schedule]]
 id = "sau-sheong"
 title = "Go and LLMs"
 description = "Using the power of large language models with Go."
 speaker = "Chang Sau Sheong"
 speakerLink = "/speakers#sau-sheong"
+time = "9:15 AM"
 
 [[schedule]]
 id = "chris-shepherd"
@@ -11,6 +25,13 @@ title = "Go Concurrency Techniques for Self-Healing Applications"
 description = "Monitoring health of distributed systems is never easy. I will discuss the challenges we faced keeping some of our most critical applications operational and how we use different concurrency techniques in Go to intelligently monitor, and automatically restart unhealthy Kafka consumers."
 speaker = "Chris Shepherd"
 speakerLink = "/speakers#chris-shepherd"
+time = "9:55 AM"
+
+[[schedule]]
+id = "am-tea-break"
+title = "Tea Break"
+speaker = "GopherCon Singapore Team"
+time = "10:25 AM"
 
 [[schedule]]
 id = "marian-montagnino"
@@ -18,6 +39,7 @@ title = "Back to the Future: Modernizing CLIs Using Go"
 description = "Since the dawn of computing, we've interacted with computers using the text-based Command Line Interface (CLI). Today, even with the dominance of graphical interfaces, CLIs are often paired with company APIs to boost platform engagement or used in cloud infrastructure. In my talk, I'll dive into the CLI's structure, the principles for building an effective one, and showcase hands-on examples with some of Go's most popular frameworks."
 speaker = "Marian Montagnino"
 speakerLink = "/speakers#marian-montagnino"
+time = "10:45 AM"
 
 [[schedule]]
 id = "kirill-che"
@@ -25,6 +47,7 @@ title = "Go low latency patterns"
 description = "In today's fast-paced digital landscape, optimizing the performance of applications is paramount, especially for performance-critical paths. In this talk, we will dive deep into the world of Go low latency patterns, exploring the techniques, examples, and explanations for writing efficient, high-performance code in Go."
 speaker = "Kirill Che."
 speakerLink = "/speakers#kirill-che"
+time = "11:15 AM"
 
 [[schedule]]
 id = "dave-cheney"
@@ -32,6 +55,20 @@ title = "Three techniques for building high performance parsers"
 description = "As programmers or operators our job involves JSON at some point. JSON decoding is expensive, if your product talks JSON, then performance of marshalling data in and out of JSON is important. This is a talk with three techniques for designing an efficient replacement for encoding/json.Decoder."
 speaker = "Dave Cheney"
 speakerLink = "/speakers#dave-cheney"
+time = "11:45 AM"
+
+[[schedule]]
+id = "lunch"
+title = "Lunch"
+speaker = "GopherCon Singapore Team"
+time = "12:30 PM"
+
+[[schedule]]
+id = "william-kennedy"
+title = "A Bill Kennedy Special"
+speaker = "William Kennedy"
+speakerLink = "/speakers#william-kennedy"
+time = "1:30 PM"
 
 [[schedule]]
 id = "wu-huijie"
@@ -39,6 +76,7 @@ title = "Data Integration: Building Systems for Swift Client Servicing in Go"
 description = "Imagine your software development team is tasked to blend data from various sources and serve clients in a short period of time. What are the considerations in designing a low-overhead system to achieve this? What are the existing libraries/tools that can slash development time?"
 speaker = "Wu Huijie"
 speakerLink = "/speakers#wu-huijie"
+time = "2:00 PM"
 
 [[schedule]]
 id = "chewxy"
@@ -46,6 +84,13 @@ title = "Man Bites Dog: A Journey of LLMs and What Comes Next (and Why Go is Poi
 description = "LLMs like GPT-4 have gained popularity recently, raising questions about their capabilities and general intelligence - mostly written in Python, seemingly leaving Gophers out in the cold. However, that couldn't be more false. In this talk I'll explore where Go can go in an LLM-filled future."
 speaker = "Chew Xuanyi"
 speakerLink = "/speakers#chewxy"
+time = "2:30 PM"
+
+[[schedule]]
+id = "pm-tea-break"
+title = "Tea Break"
+speaker = "GopherCon Singapore Team"
+time = "3:00 PM"
 
 [[schedule]]
 id = "bjorn-andersson"
@@ -53,6 +98,7 @@ title = "How to design a test suite you’ll love to maintain"
 description = "Have you worked on a test suite where you're cursing it more often than you're thanking it for helping you out? I sure have! I have written them myself, seen a good suite degrade into it over time, and even taken over messes. I will share the constraints I put on my test suites that help me maintain them and why they help. We'll look at how to discover when you're breaking these constraints and solutions to make living with the constraints simpler."
 speaker = "Björn Andersson"
 speakerLink = "/speakers#bjorn-andersson"
+time = "3:30 PM"
 
 [[schedule]]
 id = "matt-boyle"
@@ -60,3 +106,17 @@ title = "Keeping myself alive with Go"
 description = "As a type 1 diabetic, keeping myself alive is a daily P1 incident with runbooks that are constantly out of date. Like all systems, having good monitoring is essential to ensure uptime (or as I call it, staying alive).  In this talk I will discuss how I have evolved my o11y using Go & other tools."
 speaker = "Matt Boyle"
 speakerLink = "/speakers#matt-boyle"
+time = "4:00 PM"
+
+[[schedule]]
+id = "closing-remarks"
+title = "Closing Remarks & Group Photo"
+speaker = "Chang Sau Sheong"
+speakerLink = "/speakers#sau-sheong"
+time = "4:40 PM"
+
+[[schedule]]
+id = "afterparty"
+title = "Afterparty"
+speaker = "GopherCon Singapore Team"
+time = "6:00 PM"

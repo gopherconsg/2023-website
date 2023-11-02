@@ -1,6 +1,6 @@
 {{ define "main" }}
     <table class="text-left">
-      <!-- <colgroup class="hidden md:table-column-group">
+      <colgroup class="hidden md:table-column-group">
         <col class="w-[30%]" />
         <col class="w-[32%]" />
         <col class="w-[38%]" />
@@ -11,8 +11,8 @@
           <th class="pb-8">Topic</th>
           <th class="pb-8">Description</th>
         </tr>
-      </thead> -->
-      <colgroup class="hidden md:table-column-group">
+      </thead>
+      <!-- <colgroup class="hidden md:table-column-group">
         <col class="w-[34%]" />
         <col class="w-[66%]" />
       </colgroup>
@@ -21,10 +21,10 @@
           <th class="pb-8">Topic</th>
           <th class="pb-8">Description</th>
         </tr>
-      </thead>
+      </thead> -->
       <tbody class="align-top">
         {{ range $.Site.Data.schedule.schedule }}
-            <!-- <td class="order-1 block pt-6 text-lg font-semibold md:pr-8 md:pb-8 whitespace-nowrap md:table-cell">{{ .time }}</td> -->
+            <td class="order-1 block pt-6 text-lg font-semibold md:pr-8 md:pb-8 whitespace-nowrap md:table-cell">{{ .time }}</td>
           <tr class="flex flex-col border-b md:table-row border-b-gray-400 last:border-b-0" id="{{ .id }}">
             <td class="block pt-6 md:pr-14 md:pb-8 md:table-cell">
               <div class="mb-1 text-2xl font-semibold">{{ .title }}</div>

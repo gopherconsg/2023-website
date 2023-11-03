@@ -2,8 +2,3 @@
 # See https://developers.cloudflare.com/pages/platform/redirects/
 
 /qna https://app.sli.do/event/o5DnrndkgPXNnum6d7WFdN 302
-
-/*  https://2023.gophercon.sg/:splat  301
-
-/* https://2023.gophercon.sg/:splat 301
-/* https://2023.gophercon.sg/:splat 301

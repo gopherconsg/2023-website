@@ -1,7 +1,9 @@
 # Redirect domain aliases to primary domain on Cloudflare Pages
 # See https://developers.cloudflare.com/pages/platform/redirects/
 
-http://2023.gophercon.sg/*  https://2023.gophercon.sg/:splat  301
+/qna https://app.sli.do/event/o5DnrndkgPXNnum6d7WFdN 302
 
-https://gophercon.sg/* https://2023.gophercon.sg/:splat 301
-https://www.gophercon.sg/* https://2023.gophercon.sg/:splat 301
+/*  https://2023.gophercon.sg/:splat  301
+
+/* https://2023.gophercon.sg/:splat 301
+/* https://2023.gophercon.sg/:splat 301
